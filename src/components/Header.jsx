@@ -12,7 +12,7 @@ export default function Header() {
     return (
         <header  className="nav-header px-0 p-1 position-fixed w-100 h-auto " >
           <Container className="d-flex justify-content-between px-0">
-            <Navbar.Brand href="/" className="ms-0">
+            <Navbar.Brand href="/frontend/" className="ms-0">
               <img src={logoBookingBlue} alt="RUT_logo" className="logo-img" />
             </Navbar.Brand>
             
