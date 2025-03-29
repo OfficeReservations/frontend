@@ -4,10 +4,9 @@ import { Outlet } from "react-router-dom";
 export default function LandingPage() {
     return (
       <div>
-        <header >
           <Header />
-        </header>
-        <main>
+        
+        <main >
           <Outlet />
         </main>
       </div>

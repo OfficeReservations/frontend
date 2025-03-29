@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+
+.cursor-pointer{
+    cursor:pointer;
+    color:rgb(22,62,115);
+}
+.btn-building{
+    color:rgb(22,62,115) !important;
+    text-decoration:none !important;
+    background-color: #fff;
+    
+}
+.home-container{
+    padding-top:50px;
+    font-family: "Open Sans", sans-serif;
+    /* background: #f0f0f0; */
+    min-height:100vh;
+    
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+    padding:0 15px;
+}
+
+.dropdown_menu{
+    position: absolute;
+    left: 0; 
+    top: 100%;
+    background-color: #fff;
+    padding: 0.5rem;
+    box-shadow: 0 0.1rem 10px rgba(69, 69, 69, 0.1);
+    border-radius:5px;
+    width: 200px;
+    trasition: all .09s ease-out;
+}
+
+.form-check{
+    display:block;
+    padding: 0.5rem;
+}
+
+.btn_arrow{
+    display:flex;
+    align-items:center;
+    cursor:pointer;
+}
