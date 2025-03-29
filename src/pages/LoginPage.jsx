@@ -18,7 +18,7 @@ export default function LoginPage() {
                         <button type="submit" className="btn btn-primary">Войти</button>
                     </div>
                     <div className="link text-end mt-3">
-                        <p>Нет аккаунта?  <Link to="/signUp">Войти</Link> </p>
+                        <p>Нет аккаунта?  <Link to="signUp">Войти</Link> </p>
                     </div>
                 </form>
 

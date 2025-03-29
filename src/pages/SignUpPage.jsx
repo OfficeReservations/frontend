@@ -27,7 +27,7 @@ export default function SignUpPage() {
                         <button type="submit" className="btn btn-primary">Зарегистрироваться</button>
                     </div>
                     <div className="link text-end mt-3">
-                        <p>Есть аккаунт?  <Link to="/login">Войти</Link></p>
+                        <p>Есть аккаунт?  <Link to="login">Войти</Link></p>
                     </div>
                 </form>
 
