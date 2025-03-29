@@ -17,11 +17,11 @@ export default function Header() {
             </Navbar.Brand>
             
             <Nav>
-              <Nav.Link as={Link} to="/profile" > 
+              <Nav.Link as={Link} to="profile" > 
                 <FaUser size={30} className="icon-user p-0" />
               </Nav.Link>
               {!hideLogout && (
-                <Nav.Link as={Link} to="/login" > 
+                <Nav.Link as={Link} to="login" > 
                 <IoMdExit size={30} className="icon-user p-0" />
               </Nav.Link>
               )}
