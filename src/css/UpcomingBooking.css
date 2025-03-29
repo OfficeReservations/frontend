@@ -1,0 +1,12 @@
+.btn-arrow{
+    display:inline-flex;
+    width: auto;
+}
+.container-upcoming{
+    width:400px;
+    color: rgb(22, 62, 115);
+
+}
+.upcomingText{
+    color: rgb(22, 62, 115);
+}

@@ -1,0 +1,84 @@
+
+.scheduler-container {
+    padding: 16px;
+    margin-top: 22px;
+  }
+  
+
+  .controls {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .btn-prev-week, .btn-next-week {
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border: 2px solid #0056b3;
+    color: #0056b3;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-prev-week:hover, .btn-next-week:hover {
+    background-color: #e6f0ff;
+  }
+
+  .date-range {
+    font-size: 16px;
+    color: #333;
+    margin: 0 10px;
+    display: inline-block;
+    white-space: nowrap;
+  }
+
+  .table-container {
+    overflow-x: auto;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+  }
+
+  .scheduler-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .scheduler-table th, .scheduler-table td {
+    padding: 16px;
+    text-align: center;
+    border: 1px solid #ddd;
+    font-size: 16px;
+  }
+  
+  .date-header {
+    background-color: #f7f7f7;
+    font-weight: bold;
+  }
+  
+  .time-cell {
+    background-color: #f7f7f7;
+    font-weight: bold;
+  }
+  
+  .room-cell {
+    background-color: #fafafa;
+    color: #0056b3; 
+  }
+  
+  .room-cell:hover {
+    background-color: #e6f0ff;
+  }
+
+  .table-container {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .empty-cell{
+    background-color: #f7f7f7;
+  }
+
+  
