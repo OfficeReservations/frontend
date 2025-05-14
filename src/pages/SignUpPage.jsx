@@ -24,10 +24,10 @@ export default function SignUpPage() {
                         <input type="password" className="form-control" placeholder="Пароль" required />
                     </div>
                     <div className="d-grid">
-                        <button type="submit" className="btn btn-primary">Зарегистрироваться</button>
+                        <button type="submit" >Зарегистрироваться</button>
                     </div>
                     <div className="link text-end mt-3">
-                        <p>Есть аккаунт?  <Link to="login">Войти</Link></p>
+                        <p>Есть аккаунт?  <Link to="/login" className="custom-link">Войти</Link></p>
                     </div>
                 </form>
 

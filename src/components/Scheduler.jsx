@@ -19,6 +19,15 @@ export default function Scheduler() {
     { date: '2025-03-03', time: '11:40 - 13:00', rooms: ['501', '502', '503'] },
     { date: '2025-03-04', time: '8:30 - 9:50', rooms: ['601'] },
     { date: '2025-03-05', time: '15:20 - 16:40', rooms: ['701', '702', '703'] },
+    { date: '2025-04-01', time: '15:20 - 16:40', rooms: ['701', '702', '703'] },
+    { date: '2025-04-01', time: '10:05 - 11:25', rooms: ['701', '702', '703'] },
+    { date: '2025-03-31', time: '8:30 - 9:50', rooms: ['601'] },
+    { date: '2025-03-28', time: '15:20 - 16:40', rooms: ['701', '702', '703'] },
+    { date: '2025-04-01', time: '15:20 - 16:40', rooms: ['701', '702', '703'] },
+    { date: '2025-04-01', time: '10:05 - 11:25', rooms: ['701', '702', '703'] },
+    { date: '2025-04-03', time: '8:30 - 9:50', rooms: ['701', '702', '703'] },
+    { date: '2025-04-03', time: '10:05 - 11:25', rooms: ['701', '702', '703'] },
+    
   ];
 
   useEffect(() => {
@@ -31,12 +40,9 @@ export default function Scheduler() {
   const times = ['8:30 - 9:50', '10:05 - 11:25', '11:40 - 13:00', '13:45 - 15:05', '15:20 - 16:40', '16:55 - 18:15', '18:30 - 19:50', '20:00 - 21:20'];
 
   const handleCellClick = (room) => {
-    setSelectedRooms(room ? room.rooms : null);
+    setSelectedRooms(room || null);
   };
 
-  const allRooms = Array.from(
-    new Set(roomsData.flatMap(room => room.rooms))
-  ).sort();
 
   return (
     <div className="scheduler-container">
@@ -82,7 +88,7 @@ export default function Scheduler() {
           </tbody>
         </table>
       </div>
-      <RoomBooking allRooms={allRooms} selectedRooms={selectedRooms} onClose={() => setSelectedRooms(null)} />
+      <RoomBooking roomsData={roomsData} selectedRooms={selectedRooms} onClose={() => setSelectedRooms(null)} />
     </div>
   );
 }

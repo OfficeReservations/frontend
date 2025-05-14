@@ -14,13 +14,13 @@ import ProfilePage from './pages/ProfilePage'
 
 const router = createBrowserRouter([
   {
-    path: "/frontend",
+    path: "/",
     element: <LandingPage />,
     children: [
-      { path: "", element: <HomePage /> },
-      { path: "signUp", element: <SignUpPage /> },
-      { path: "login", element: <LoginPage /> },
-      { path: "profile", element: <ProfilePage /> },
+      { path: "/", element: <HomePage /> },
+      { path: "/signUp", element: <SignUpPage /> },
+      { path: "/login", element: <LoginPage /> },
+      { path: "/profile", element: <ProfilePage /> },
     ],
   },
 ]);

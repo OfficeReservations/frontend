@@ -15,10 +15,10 @@ export default function LoginPage() {
                         <input type="password" className="form-control" placeholder="Пароль" required />
                     </div>
                     <div className="d-grid">
-                        <button type="submit" className="btn btn-primary">Войти</button>
+                        <button type="submit" >Войти</button>
                     </div>
                     <div className="link text-end mt-3">
-                        <p>Нет аккаунта?  <Link to="signUp">Войти</Link> </p>
+                        <p>Нет аккаунта?  <Link to="/signUp" className="custom-link">Зарегистрироваться</Link> </p>
                     </div>
                 </form>
 

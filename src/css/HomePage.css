@@ -1,5 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
 
+.mobile-filters-btn{
+    display:none;
+    padding: 10px 15px;
+    top: 70px;
+    z-index: 50;
+}
+
+.mobile-filters-btn button{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    background-color: rgb(22, 62, 115);
+    color:white;
+    border:none;
+    border-radius:5px;
+    padding: 8px 15px;
+}
+.desktop-filters-panel {
+    position: sticky;
+    top: 16px;
+    height: 75vh;
+    overflow-y: auto;
+}
+
+.mobile-filters-panel {
+    width: 280px;
+    height: 30%;
+    background: white;
+    transition: left 0.3s ease;
+    overflow-y: auto;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+ }
+.mobile-filters-panel.open {
+    left: 0;
+  }
 
 .cursor-pointer{
     cursor:pointer;
@@ -12,7 +47,7 @@
     
 }
 .home-container{
-    padding-top:50px;
+    padding-top:10px;
     font-family: "Open Sans", sans-serif;
     /* background: #f0f0f0; */
     min-height:100vh;
@@ -47,3 +82,32 @@
     align-items:center;
     cursor:pointer;
 }
+
+@media (max-width: 992px) {
+
+  
+    .mobile-filters-btn {
+        display: block;
+      }
+      
+    .desktop-filters-panel {
+        display: none;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    main{
+        width:100%;
+    }
+
+    .filters-panel {
+      width: 85%;
+    }
+
+
+  }
+  
+  .cursor-pointer {
+    cursor: pointer;
+    color: rgb(22,62,115);
+  }
